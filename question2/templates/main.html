@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Question2</title>
+</head>
+
+<body>
+
+  <h2>Select some files to upload</h2>
+
+  <form method="post" action="/home" enctype="multipart/form-data">
+    <p>
+      <input type = "file" name= "file" autocomplete="off" required>
+    </p>
+
+    <p> Please provide a text label for your image </p>
+
+    <p>  
+      <textarea name="text_box"></textarea>
+    </p>
+    
+    <p>
+      <input type= "submit" value= "Submit">
+    </p>
+
+  </form>
+
+  <form method="post" action="/seg" enctype="multipart/form-data">
+    <p>
+      <input type= "submit" value= "Done">
+    </p>
+  </form>
+  
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<html>
+
+<style>
+P { text-align: left; font-family:Arial; }
+H2 { text-align: center; font-family:Arial; }
+div.parent {
+  font-family: Arial;
+  margin-left: 28.5%;
+}
+
+input[type=text], input[type=password] {
+  width: 60%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  background-color: #b30000;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 60%;
+}
+
+</style>
+
+<head>
+  <title>Question1</title>
+</head>
+
+<body>
+
+  <h2>Create Account</h2>
+
+  
+  <form method="post" action = "/create-account" enctype="multipart/form-data">
+
+    <div class= "parent">
+      {% if error1 %}
+        <p style="color:red;">An account with this email already exists.</p>
+      {% endif %}
+      {% if error2 %}
+        <p style="color:red;">Username already taken. Please choose a different one.</p>
+      {% endif %}
+      <p><label for="first_name">First Name:</label></p>
+      <input type="text" id="first_name" name="first_name"><br>
+
+      <p><label for="last_name">Last Name:</label></p>
+      <input type="text" id="last_name" name="last_name"><br>
+
+      <p><label for="email">Email:</label></p>
+      <input type="text" id="email" name="email"><br>
+
+      <p><label for="username">Username:</label></p>
+      <input type="text" id="username" name="username"><br>
+
+      <p><label for="pwd">Password:</label></p>
+      <input type="password" id="password" name="password"><br>
+    
+      <p>
+        <input type="submit" value="Create Account">
+      </p>
+    </div>
+  </form>
+
+
+
+</body>
+</html>
