@@ -11,6 +11,9 @@ If the user doesn’t have an account, it directs them to a page to create an ac
 
 • Get basic user information in that page, and create an account
 
+Bonus point:
+• Allow log in via gmail
+
 # question2
 1. Ask the user to upload some images with their text labels (e.g., an image of a cat,
 an image of a dog, etc.)
